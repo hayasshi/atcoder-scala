@@ -25,6 +25,7 @@ trait StdioSupport {
     } finally {
       in.close()
       out.close()
+      Thread.sleep(100)
     }
   }
 
