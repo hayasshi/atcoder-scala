@@ -3,7 +3,7 @@ package abc001
 import org.scalatest.FunSuite
 import support.StdioSupport
 
-class B_視程の通報Test extends FunSuite  with StdioSupport {
+class B_視程の通報Test extends FunSuite with StdioSupport {
 
   test("Sample1") {
     val stdout = actionWithStdIn("15000") {
