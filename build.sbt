@@ -7,7 +7,8 @@ ThisBuild / organization     := "com.github.hayasshi"
 lazy val root = (project in file("."))
   .settings(
     name := "atcoder-scala",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies += scalaTest % Test,
+    parallelExecution in Test := false
   )
 
 // Uncomment the following for publishing to Sonatype.
